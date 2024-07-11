@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inc.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <div class="logoandtext">
+              <img src="Designer.png" alt="Logo" class="logo">
+              <a href="home.html" class="nav_logo">ExpTrack</a></div>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="expense.html" class="nav_link">Expenses</a>              
+              <a href="income.html" class="nav_link">Income</a>
+              <a href="reports.html" class="nav_link">Reports</a>
+              <a href="analytics.html" class="nav_link">Analytics</a>
+            </li>
+          </ul>
+          <a href="index.html">
+            <button class="button">Logout</button>
+          </a>
+        </nav>
+      </header>
+
+      <section class="home">
+        <div id="container">
+          <div id="income-form">
+            <div><h1>Income</h1></div>
+            <div class="text">Select the source of income: </div>
+            <select id="category" name="category">
+              <option value="employment">Employment</option>
+              <option value="investments">Investments</option>
+              <option value="dividends">Dividends</option>
+              <option value="interest">Interest</option>
+              <option value="gifts">Gifts</option>
+              <option value="grants">Grants</option>
+              <option value="government-benefits">Government Benefits</option>
+              <option value="pensions">Pensions</option>
+              <option value="rental-income">Rental Income</option>
+              <option value="freelance-work">Freelance Work</option>
+              <option value="micelleneous">Micellaneous</option>
+            </select>
+            <div class="text">Enter the date:</div>
+            <input type="date" id="date">
+            <div class="text">Enter Description:</div>
+            <input type="text" id="description" placeholder="Description">
+            <div class="text">Enter amount:</div>
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="add-income" type="submit">Add Income</button>
+          </div>
+        
+          <div id="transaction-history">
+            <h1>Recent Transactions</h1>
+            <button id="clear-all">Clear All</button>
+            <ul id="transaction-list"></ul>
+            <div id="total-amount"></div>
+          </div>
+        </div>
+      </section>
+      <script src="inc.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+#container{
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+}
+h1{
+  color:#424874;
+  text-shadow: 5px 5px 10px rgba(66, 72, 116, 0.4);
+}
+    #container {
+        position:fixed;
+        top:35px;
+        left:30px;
+        right:30px;
+        bottom:30px;
+      display: flex;
+      background-color:#f4eeff;
+      border-radius: 18px;
+      margin: 25px;
+    }
+  #expense-form {
+      display: flex;
+      background-color: #dcd6f7;
+      flex-direction: column;
+      width: 40%;
+      padding:50px;
+      border-radius:0px 50px 0px 50px; 
+      margin:25px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    #transaction-history {
+      display: flex;
+      flex-direction: column;
+      background-color: #dcd6f7;
+      width: 60%;
+      padding:50px;
+      margin:25px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius:50px 0px 50px 0px; 
+      flex-grow: 1;
+      overflow-y: auto;
+
+    }
+    
+    #transaction-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    #transaction-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      color:#424874;
+    }
+    
+    #transaction-list li button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    
+    #total-amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #ccc;
+      padding: 10px 0;
+      font-weight: bold;
+      color:red;
+    }
+    select{
+      width:250px;
+      border-radius: 18px;
+      margin:15px;
+      height:30px;
+      background-color: #a6b1e1;
+    }
+    .text{
+      margin-left: 15px;
+      color:#30355c;
+      font-size: 20px;
+      text-shadow: 5px 5px 10px rgba(48, 53, 92, 0.4);
+    }
+    input{
+      width:250px;
+      border-radius: 18px;
+      margin:15px;
+      height:30px;
+      background-color: #a6b1e1;
+      border-color: #30355c;
+      border:none;
+    }
+    button{
+      background-color:#41305c;
+      border-radius: 25px;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    #description{
+      width:300px;
+    }
+    #add-expense{
+      margin-top: 25px;
+    }

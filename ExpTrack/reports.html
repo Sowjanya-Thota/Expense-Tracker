@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reports.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <div class="logoandtext">
+              <img src="Designer.png" alt="Logo" class="logo">
+              <a href="home.html" class="nav_logo">ExpTrack</a></div>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="expense.html" class="nav_link">Expenses</a>
+              <a href="income.html" class="nav_link">Income</a>
+              <a href="reports.html" class="nav_link">Reports</a>
+              <a href="analytics.html" class="nav_link">Analytics</a>
+            </li>
+          </ul>
+          <a href="index.html">
+            <button class="button">Logout</button>
+          </a>
+        </nav>
+      </header>
+
+      <section class="home">
+        <div id="box">
+       <div id="table">
+        <table id="analysis-table">
+          <caption><i>Expense and Income Reports</i></Expense></caption>
+          <thead>
+            <tr>
+              <th><i>Category</i></th>
+              <th><i>Expenses</i></th>
+              <th><i>Incomes</i></th>
+              <th><i>Net</i></th>
+            </tr>
+          </thead>
+          <tbody id="analysis-tbody">
+          </tbody>
+        </table></div>
+        <div id="right-side">
+          <h2>Balance: <span id="balance">0</span></h2>
+          <h2>Total Expenses: <span id="total-expenses">0</span></h2>
+          <h2>Total Incomes: <span id="total-incomes">0</span></h2>
+        </div>
+      </div>
+</section>
+      <script src="reports.js"></script>
+</body>
+</html>

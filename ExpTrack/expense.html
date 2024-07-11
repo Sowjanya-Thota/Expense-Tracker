@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="exp.css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <div class="logoandtext">
+              <img src="Designer.png" alt="Logo" class="logo">
+              <a href="home.html" class="nav_logo">ExpTrack</a></div>
+          <ul class="nav_items">
+            <li class="nav_item">
+              <a href="expense.html" class="nav_link">Expenses</a>
+              <a href="income.html" class="nav_link">Income</a>
+              <a href="reports.html" class="nav_link">Reports</a>
+              <a href="analytics.html" class="nav_link">Analytics</a>
+            </li>
+          </ul>
+          <a href="index.html">
+            <button class="button">Logout</button>
+          </a>
+        </nav>
+      </header>
+
+      <section class="home">
+        <div id="container">
+          <div id="expense-form">
+            <div><h1>Expenses</h1></div>
+            <div class="text">Select the type of expense: </div>
+            <select id="category" name="category">
+              <option value="rent">Rent/Mortgage</option>
+              <option value="utilities">Utilities</option>
+              <option value="groceries">Groceries</option>
+              <option value="transportation">Transportation</option>
+              <option value="phone">Phone/Internet/Cable</option>
+              <option value="clothing">Clothing</option>
+              <option value="debt-repayment">Debt Repayment</option>
+              <option value="medical">Medical/Healthcare</option>
+              <option value="insurance">Insurance</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="other">others</option>
+            </select>
+            <div class="text">Enter the date:</div>
+            <input type="date" id="date" name="date">
+            <div class="text">Enter Description:</div>
+            <input type="text" id="description" name="description" placeholder="Description">
+            <div class="text">Enter amount:</div>
+            <input type="number" id="amount" name="amount" placeholder="Amount">
+            <button id="add-expense" type="submit">Add Expense</button>
+          </div>
+          <div id="transaction-history">
+            <h1>Recent Transactions</h1>
+            <button id="clear-all">Clear All</button>
+            <ul id="transaction-list"></ul>
+            <div id="total-amount"></div>
+          </div>
+        </div>
+      </section>
+      <script src="exp.js"></script>
+  
+</body>
+</html>
