@@ -1,3 +1,3 @@
 # Expense-Tracker
 
-An Expense Tracking Website using HTML, CSS, JavaScript, and mySQL for Database.
+An Expense Tracking Website using HTML, CSS, JavaScript,PHP and mySQL for Database.
